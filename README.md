@@ -24,9 +24,11 @@ Al ejecutar el scritp creara un archivo con el array conpleto, listo para copiar
  
   json
   
-  {
+ {
+ 
     "username": "carlos",
     "password": ["123456", "password", "qwerty", "correct_password", "..."]
-  }
+ 
+ }
   
 · Envía y analiza: Al enviar esta única petición, el servidor (si es vulnerable) iterará internamente por toda la lista. Un código de estado 302 Found o una respuesta de éxito indicará que una de las contraseñas fue la correcta. Luego solo debes copiar la cookie de sesión de la respuesta para secuestrar la cuenta.
