@@ -20,10 +20,15 @@ Al ejecutar el scritp creara un archivo con el array conpleto, listo para copiar
 
 · Intercepta y envía la petición: Captura la solicitud de login con el Proxy y envíala al Repeater.
 · Modifica el cuerpo de la petición: Cambia el valor del campo password (o code) de un string a un array de strings en formato JSON. La petición debería verse así:
+ 
   json
+  
   {
+  
     "username": "carlos",
+    
     "password": ["123456", "password", "qwerty", "correct_password", "..."]
+  
   }
   
 · Envía y analiza: Al enviar esta única petición, el servidor (si es vulnerable) iterará internamente por toda la lista. Un código de estado 302 Found o una respuesta de éxito indicará que una de las contraseñas fue la correcta. Luego solo debes copiar la cookie de sesión de la respuesta para secuestrar la cuenta.
