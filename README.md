@@ -32,3 +32,28 @@ Al ejecutar el scritp creara un archivo con el array conpleto, listo para copiar
  }
   
 · Envía y analiza: Al enviar esta única petición, el servidor (si es vulnerable) iterará internamente por toda la lista. Un código de estado 302 Found o una respuesta de éxito indicará que una de las contraseñas fue la correcta. Luego solo debes copiar la cookie de sesión de la respuesta para secuestrar la cuenta.
+
+# JsonArrayPass.py
+
+Este script generara el json array de contraseñas fácil para copiar y pegar en la peticion de BurpSuite, pero debes pasarle el diccionario para que lo genere.
+
+**Permisos**: chmod +x JsonArrayPass.py
+
+**Ejecutas** el script: python3 JsonArrayPass.py
+
+**Diccionario**: Le pasas la ruta del diccionario para generar el json array.
+
+<img width="908" height="382" alt="image" src="https://github.com/user-attachments/assets/43e0e35d-6de1-4ef2-8972-8f37597e29e5" />
+
+**Archivo generado**: passwords.json
+
+<img width="405" height="216" alt="image" src="https://github.com/user-attachments/assets/2f62ff9b-dbbd-4fd1-90f6-9184afc5acd9" />
+
+
+
+
+
+
+
+
+
