@@ -39,7 +39,7 @@ Este script generara el json array de contraseñas fácil para copiar y pegar en
 
 **Permisos**: chmod +x JsonArrayPass.py
 
-**Ejecutas** el script: python3 JsonArrayPass.py
+**Ejecutas el script**: python3 JsonArrayPass.py
 
 **Diccionario**: Le pasas la ruta del diccionario para generar el json array.
 
